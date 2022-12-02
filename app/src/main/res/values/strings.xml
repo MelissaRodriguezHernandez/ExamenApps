@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ExamenApps</string>
+    <string name="email">Email</string>
+    <string name="exam_app_that_implements_a_surveys">Exam App that implements a Surveys</string>
+    <string name="sign_in_or_create_an_account">Sign in or create an account</string>
+    <string name="or">or</string>
+    <string name="sign_in_as_guest">Sign in as guest</string>
+    <string name="logo">logo</string>
+    <string name="continue1">continue</string>
+    <string name="or1">or</string>
+    <string name="email1">Email</string>
+    <string name="password1">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="atras">atras</string>
+    <string name="sign_in1">Sign in</string>
+    <string name="numberPage">1</string>
+    <string name="textQuestion">pregunta</string>
+    <string name="textSelectQ">TextView</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="question1">In my free time I like to…</string>
+    <string name="question2">What is your favorite movie?</string>
+    <string name="question3">When was the last time you ordered takeaway  because you  </string>
+    <string name="question4">How do you feel about selfies?</string>
+    <string name="qSelect"> Select all that apply</string>
+    <string name="qSelect1">Select one.</string>
+    <string name="qSelect2">Select date.</string>
+    <string name="of_6">of 6</string>
+    <!--    <string-array name="checkbx">-->
+<!--        <string>Read</string>-->
+<!--        <string>Work out</string>-->
+<!--        <string>Draw</string>-->
+<!--        <string>Play video games</string>-->
+<!--    </string-array>-->
+<!--    <string-array name="radio1">-->
+<!--        <string>Start Trek</string>-->
+<!--        <string>The social</string>-->
+<!--        <string>Back to the future</string>-->
+<!--        <string>Outbreak</string>-->
+<!--    </string-array>-->
+</resources>
