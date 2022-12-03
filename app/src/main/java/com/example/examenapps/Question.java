@@ -2,37 +2,37 @@ package com.example.examenapps;
 
 public class Question {
 
-    private int numQ;
+    private int num;
     private int question;
     private int qSelect;
 
-    public Question(int numQ, int question, int qSelect) {
-        this.numQ = numQ;
-        this.question = question;
-        this.qSelect = qSelect;
+    public Question(int numQ, int questionQ, int qSelectQ) {
+        num = numQ;
+       question = questionQ;
+        qSelect = qSelectQ;
     }
 
     public int getNumQ() {
-        return numQ;
+        return num;
     }
 
     public void setNumQ(int numQ) {
-        this.numQ = numQ;
+        num = numQ;
     }
 
-    public int getQuestion() {
+    public int getQuestionQ() {
         return question;
     }
 
-    public void setQuestion(int question) {
-        this.question = question;
+    public void setQuestionQ(int questionQ) {
+        question = questionQ;
     }
 
-    public int getqSelect() {
+    public int getqSelectQ() {
         return qSelect;
     }
 
-    public void setqSelect(int qSelect) {
-        this.qSelect = qSelect;
+    public void setqSelectQ(int qSelectQ) {
+        qSelect = qSelectQ;
     }
 }
