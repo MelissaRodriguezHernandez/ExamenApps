@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        sign = findViewById(R.id.bSign);
+        sign = findViewById(R.id.bSign1);
         sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        continu = findViewById(R.id.bConitue);
+        continu = findViewById(R.id.bConitue1);
         continu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -26,17 +26,21 @@
     <string name="qSelect"> Select all that apply</string>
     <string name="qSelect1">Select one.</string>
     <string name="qSelect2">Select date.</string>
-    <string name="of_6">of 6</string>
-    <!--    <string-array name="checkbx">-->
-<!--        <string>Read</string>-->
-<!--        <string>Work out</string>-->
-<!--        <string>Draw</string>-->
-<!--        <string>Play video games</string>-->
-<!--    </string-array>-->
-<!--    <string-array name="radio1">-->
-<!--        <string>Start Trek</string>-->
-<!--        <string>The social</string>-->
-<!--        <string>Back to the future</string>-->
-<!--        <string>Outbreak</string>-->
-<!--    </string-array>-->
+    <string name="of_6">of 4</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="read">Read</string>
+    <string name="work_out">Work out</string>
+    <string name="draw">Draw</string>
+    <string name="play_video_games">PLay video games</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lutbreak">Lutbreak</string>
+    <string name="the_social">The social</string>
+    <string name="future">Future</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="star_trek">Star trek</string>
+    <string name="select_day">Select day</string>
 </resources>

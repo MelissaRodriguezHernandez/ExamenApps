@@ -3,8 +3,10 @@ package com.example.examenapps;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,9 +16,13 @@ import java.util.ArrayList;
 
 public class Screen2 extends AppCompatActivity {
 
-    Button sign, continu;
+    Button sign1, continu1;
     TextInputEditText textInput;
-    static ArrayList<String> emails;
+    static ArrayList<String> emails = new ArrayList<>();
+    static ArrayList<String> contras = new ArrayList<>();
+    static String email;
+    static Boolean newGuest = false;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -24,28 +30,31 @@ public class Screen2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        sign = findViewById(R.id.bSign);
-        continu = findViewById(R.id.bConitue);
+        sign1 = findViewById(R.id.sign2);
+        continu1 = findViewById(R.id.bConitue2);
 
         textInput = findViewById(R.id.textInputEmail);
 
         if(textInput.isTextInputLayoutFocusedRectEnabled()){
-            sign.setOnClickListener(new View.OnClickListener() {
+            sign1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    cambiar(view);
+                    newGuest = true;
+                    Intent intent2 = new Intent(Screen2.this, Screen3.class);
+                    startActivity(intent2);
                 }
             });
 
-            continu.setOnClickListener(new View.OnClickListener() {
+            continu1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     if(comprobarEmail(textInput.getText().toString())){
-                        cambiar(view);
-                    }
-                    if(!comprobarEmail(textInput.getText().toString())){
-                        emails.add(textInput.getText().toString());
-
+                        email = textInput.getText().toString();
+                        Intent intent1 = new Intent(Screen2.this, Screen3.class);
+                        startActivity(intent1);
+                    }else{
+                        Toast.makeText(getApplicationContext(), "El email no existe", Toast.LENGTH_SHORT).show();
+                        textInput.setText(null);
                     }
                 }
             });
@@ -56,21 +65,12 @@ public class Screen2 extends AppCompatActivity {
     public boolean comprobarEmail(String email){
         boolean existe = false;
 
-        for (int i = 0; i < emails.size(); i++) {
-            if(emails.get(i).equals(email)){
-                existe = true;
+            for (int i = 0; i < emails.size(); i++) {
+                if(emails.get(i).equals(email)){
+                    existe = true;
+                }
             }
-        }
-
-        System.out.println(existe);
-        System.out.println(emails.toString());
-
         return existe;
-    }
-
-    public void cambiar(View view){
-        Intent intent = new Intent(Screen2.this, Screen3.class);
-        startActivity(intent);
     }
 
 }
